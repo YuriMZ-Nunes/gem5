@@ -37,6 +37,7 @@
 ##include "fp.isa"
 ##include "amo.isa"
 ##include "bs.isa"
+##include "cnn.isa"
 ##include "vector_conf.isa"
 ##include "vector_arith.isa"
 ##include "vector_mem.isa"
