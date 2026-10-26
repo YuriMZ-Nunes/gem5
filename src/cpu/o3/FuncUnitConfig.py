@@ -50,6 +50,7 @@ class IntALU(FUDesc):
 class IntMultDiv(FUDesc):
     opList = [
         OpDesc(opClass="IntMult", opLat=3),
+        OpDesc(opClass="CnnMult", opLat=3),
         OpDesc(opClass="IntDiv", opLat=20, pipelined=False),
     ]
 

@@ -158,7 +158,7 @@ class MinorDefaultIntFU(MinorFU):
 
 
 class MinorDefaultIntMulFU(MinorFU):
-    opClasses = minorMakeOpClassSet(["IntMult"])
+    opClasses = minorMakeOpClassSet(["IntMult", "CnnMult"])
     timings = [MinorFUTiming(description="Mul", srcRegsRelativeLats=[0])]
     opLat = 3
 
