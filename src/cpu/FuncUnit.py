@@ -131,6 +131,8 @@ class OpClass(Enum):
         "SimdBf16MultAcc",
         "Bf16Cvt",
         "System",
+        # riscv-cnn-bench: cnn.dot8, cnn.dwmac and cnn.rqnt[.relu].
+        "CnnMult",
     ]
 
 

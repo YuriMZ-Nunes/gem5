@@ -1340,7 +1340,7 @@ decode QUADRANT default Unknown::unknown() {
                     0x00: decode FUNCT3 {
                         0x0: cnn_dot8({{
                             Rd = cnn::dot8(Rd, Rs1, Rs2);
-                        }}, IntMultOp);
+                        }}, CnnMultOp);
                         0x1: cnn_max8({{
                             Rd = cnn::max8(Rs1, Rs2);
                         }});
@@ -1348,7 +1348,7 @@ decode QUADRANT default Unknown::unknown() {
                     0x01: decode FUNCT3 {
                         0x0, 0x1, 0x2, 0x3: cnn_dwmac({{
                             Rd = cnn::dwmac(Rd, Rs1, Rs2, FUNCT3);
-                        }}, IntMultOp);
+                        }}, CnnMultOp);
                     }
                 }
             }
@@ -2092,10 +2092,10 @@ decode QUADRANT default Unknown::unknown() {
                     format CnnOp {
                         0x00: cnn_rqnt({{
                             Rd = cnn::rqnt(Rs1, Rs2, false);
-                        }}, IntMultOp);
+                        }}, CnnMultOp);
                         0x01: cnn_rqnt_relu({{
                             Rd = cnn::rqnt(Rs1, Rs2, true);
-                        }}, IntMultOp);
+                        }}, CnnMultOp);
                     }
                 }
             }
